@@ -1,5 +1,11 @@
 React Timer
 
+Create a new Heroku Application:
+>  heroku login 
+>  heroku create
+>  git push heroku master
+>  heroku open
+
 Use 'nodemon' to watch webpack.config.js for changes:
 >  nodemon --exec "webpack -w" --watch "webpack.config.js"
 
