@@ -9,6 +9,10 @@
     .menu > .menu-text > a {
         display: inline;
         padding: 4;
-        };
+        }
+        
+    .active-link {
+        font-weight: bold;
+    }
 
 }
