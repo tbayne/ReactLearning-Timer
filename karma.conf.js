@@ -15,7 +15,9 @@ module.exports = function (config) {
         preprocessors: {
             'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
         },
-        reporters: ['mocha'],
+        reporters: [
+            'mocha', 'coverage'
+        ],
         client: {
             mocha: {
                 timeout: '5000'
@@ -24,6 +26,10 @@ module.exports = function (config) {
         webpack: webpackConfig,
         webpackServer: {
             noInfo: true
+        },
+        coverageReporter: {
+            type: 'text',
+            dir: 'tests/results/coverage/'
         }
     });
 };
