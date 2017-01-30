@@ -15,9 +15,7 @@ module.exports = function (config) {
         preprocessors: {
             'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
         },
-        reporters: [
-            'mocha', 'coverage'
-        ],
+        reporters: ['mocha'],
         client: {
             mocha: {
                 timeout: '5000'
